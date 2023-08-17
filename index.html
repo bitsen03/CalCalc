@@ -11,161 +11,120 @@
   <title>Счётчик калорий</title>
 </head>
 <body class="page">
-  <main class="main">
+  <h1>Счётчик калорий</h1>
+    <main class="main">
     <article>
-    <h1>
-        Счётчик калорий
-    </h1>
-    <form class="" name="counter" action="#" method="post">
-
-        <h2>
-            Пол
-        </h2>
+      
+      <form class="" name="counter" action="#" method="post">
+        <div class="h2-container">
+          <h2>Пол</h2>
+        </div>
         <ul>
-            <li>
-                <input type="radio" name="gender">
-                <label>
-                    Мужчина
-                </label>
-            </li>
-            <li>
-                <input type="radio" name="gender">
-                <label>
-                    Женщина
-                </label>
-            </li>
+          <li class="form_radio_btn">
+            <input id="radio-1" type="radio" name="radio" value="1" checked>
+            <label for="radio-1">Мужчина</label>
+          </li>
+          <li class="form_radio_btn">
+            <input id="radio-2" type="radio" name="radio" value="2">
+            <label for="radio-2">Женщина</label>
+          </li>
         </ul>
 
-        <fieldset>
-            <legend>
-                Физические параметры
-            </legend>
+        <fieldset class="Physical_parameters">
+          <legend>Физические параметры</legend>
+          <div class="param-container">
             <div>
-                <label>Возраст</label>
-                <span>лет</span>
+              <label>Возраст</label>
+              <span>лет</span>
             </div>
             <div>
-                <input type="text">
+              <input type="text" placeholder="0">
+            </div>
+          </div>
+          <div class="param-container">
+            <div>
+              <label>Рост</label>
+              <span>см</span>
             </div>
             <div>
-                <label>Рост</label>
-                <span>см</span>
+              <input type="text" placeholder="0">
+            </div>
+          </div>
+          <div class="param-container">
+            <div>
+              <label>Вес</label>
+              <span>кг</span>
             </div>
             <div>
-                <input type="text">
+              <input type="text" placeholder="0">
             </div>
-            <div>
-                <label>Вес</label>
-                <span>кг</span>
-            </div>
-            <div>
-                <input type="text">
-            </div>
+          </div>
         </fieldset>
-        <fieldset>
-        <legend>
-            Физическая активность
-        </legend>
-        <ul>
+        
+        <fieldset class="Physical_active">
+            <div class="h2-container"><h2>Физическая активность</h2></div>
+          <ul>
             <li>
-            <div>
+              <div>
                 <input type="radio">
-                <label>
-                    Минимальная
-                </label>
-            </div>
-            <p>
-                Сидячая работа и нет физических нагрузок
-            </p>
+                <label>Минимальная</label>
+              </div>
+              <p>Сидячая работа и нет физических нагрузок</p>
             </li>
             <li>
-            <div>
+              <div>
                 <input type="radio">
-                <label>
-                    Низкая
-                </label>
-            </div>
-            <p>
-                Редкие, нерегулярные тренировки, активность в быту
-            </p>
+                <label>Низкая</label>
+              </div>
+              <p>Редкие, нерегулярные тренировки, активность в быту</p>
             </li>
             <li>
-            <div>
+              <div>
                 <input type="radio">
-                <label>
-                    Средняя
-                </label>
-            </div>
-            <p>
-                Тренировки 3-5 раз в неделю
-            </p>
+                <label>Средняя</label>
+              </div>
+              <p>Тренировки 3-5 раз в неделю</p>
             </li>
             <li>
-            <div>
+              <div>
                 <input type="radio">
-                <label>
-                    Высокая
-                </label>
-            </div>
-            <p>
-                Тренировки 6-7 раз в неделю
-            </p>
+                <label>Высокая</label>
+              </div>
+              <p>Тренировки 6-7 раз в неделю</p>
             </li>
             <li>
-            <div>
+              <div>
                 <input type="radio">
-                <label>
-                    Очень высокая
-                </label>
-            </div>
-            <p>
-                Больше 6 тренировок в неделю и физическая работа
-            </p>
+                <label>Очень высокая</label>
+              </div>
+              <p>Больше 6 тренировок в неделю и физическая работа</p>
             </li>
-        </ul>
+          </ul>
         </fieldset>
 
-        <button class="submit" name="submit" type="submit">
-            Рассчитать
+        <button class="submit" name="submit" type="submit">Рассчитать</button>
+        <button class="reset" name="reset" type="reset" disabled>
+          <span>Очистить поля и расчёт</span>
         </button>
-        <button class= "reset" name="reset" type="reset" disabled>
-            <span>
-                Очистить поля и расчёт
-            </span>
-        </button>
-    </form>
+      </form>
 
-    <section>
-        <h2>
-            Ваша норма калорий
-        </h2>
-        <ul >
-            <li>
-                <h3>
-                <span class="normal_cal">3 800</span> ккал
-                </h3>
-                <p>
-                    поддержание веса
-                </p>
-            </li>
-            <li>
-                <h3>
-                <span>3 300</span> ккал
-                </h3>
-                <p>
-                    снижение веса
-                </p>
-            </li>
-            <li>
-                <h3>
-                <span>4 000</span> ккал
-                </h3>
-                <p>
-                    набор веса
-                </p>
-            </li>
+      <section>
+        <h2>Ваша норма калорий</h2>
+        <ul>
+          <li>
+            <h3><span class="normal_cal">3 800</span> ккал</h3>
+            <p>Поддержание веса</p>
+          </li>
+          <li>
+            <h3><span>3 300</span> ккал</h3>
+            <p>Снижение веса</p>
+          </li>
+          <li>
+            <h3><span>4 000</span> ккал</h3>
+            <p>Набор веса</p>
+          </li>
         </ul>
-    </section>
+      </section>
     </article>
   </main>
   <script src="js/script.js"></script>
