@@ -1,8 +1,29 @@
+@font-face {
+  font-family: 'bold-qwe';
+  src: url(../fonts/pt-sans-caption-bold.woff);
+}
+@font-face {
+  font-family: 'bold-qwe2';
+  src: url(../fonts/pt-sans-caption-bold.woff2);
+}
+@font-face {
+  font-family: 'regular-woff1';
+  src: url(../fonts/pt-sans-caption-regular.woff);
+}
+@font-face {
+  font-family: 'regular-woff2';
+  src: url(../fonts/pt-sans-caption-regular.woff2);
+}
+
+
+
 
 body {
    background-image: url(../img/1619300909_31-phonoteka_org-p-poleznaya-yeda-fon-42.jpg);
     background-size: cover; /* Размер изображения - покрытие всего фона */
     background-repeat: no-repeat; /* Запрет повторения изображения */
+    margin: 0;
+font-family: regular-woff2;
   }
   
 h1 {
@@ -14,7 +35,7 @@ h1 {
   main {
    
     margin: 0 auto;
-    max-width: 23%;
+    max-width: 400px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -62,6 +83,7 @@ background-color: white;
   /* Checked */
   .form_radio_btn input[type=radio]:checked + label {
     background: rgb(254, 124, 52);
+    color: azure;
   }
 
   /* Hover */
